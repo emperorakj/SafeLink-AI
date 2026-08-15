@@ -1,0 +1,161 @@
+text,label,predicted_label,correct,confidence
+Reminder: your electricity bill is due on the 18th. Pay through the official app if needed.,Safe,Safe,True,0.7170097806682796
+Your bank statement for July is now available in the official mobile banking app.,Safe,Safe,True,0.6785999602929164
+"Please do not share your OTP, PIN, CVV, or password with anyone, even if they claim to be from the bank.",Safe,Safe,True,0.5421792659084661
+"I received the books you sent. Thanks, I'll return them after the weekend.",Safe,Safe,True,0.726360543198687
+Your appointment with the service centre is confirmed for Tuesday at 11 AM.,Safe,Safe,True,0.3531675588689975
+The payment was completed successfully. No further action is required.,Safe,Safe,True,0.40739198305894664
+Never approve a UPI collect request unless you created it yourself.,Safe,UPI Scam,False,0.6265571958070496
+Your monthly salary has been credited. Check your account through your normal banking channel.,Safe,Safe,True,0.4050301059524725
+The parcel is scheduled for delivery tomorrow between 2 PM and 5 PM.,Safe,Safe,True,0.6221818469990517
+We have received your support request and will reply through the official customer portal.,Safe,Safe,True,0.4901198146121168
+Your subscription will renew next month. Manage it from the app if you want to change the plan.,Safe,Safe,True,0.485922057768653
+The college timetable has been updated. Please check the student portal for the new schedule.,Safe,Safe,True,0.5823208689174241
+I am running late for class; please save me a seat.,Safe,Safe,True,0.47457348516645526
+Your refund has been processed and should appear in your account according to the merchant's normal refund timeline.,Safe,Refund Scam,False,0.4475878440974003
+"For account security, banks advise customers never to disclose OTPs over phone calls.",Safe,Safe,True,0.510778720743251
+The train ticket has been booked successfully. Your ticket is available in the railway app.,Safe,Safe,True,0.5785224347485209
+Your credit card statement is ready. Review it using the official banking application.,Safe,Safe,True,0.6867731853168255
+Meeting moved to 4:30 PM today. Please join through the usual calendar invite.,Safe,Safe,True,0.6474568716281897
+The official app is asking me to update its version before I can continue.,Safe,Safe,True,0.7486476909280969
+Thanks for helping with the project. I'll send the presentation tonight.,Safe,Safe,True,0.6300014131031167
+"Hey, I'm helping with your bank verification. Send me the six digits that just arrived.",OTP Scam,OTP Scam,True,0.4757004351037706
+Your transaction is stuck; read the verification code to me so I can complete it.,OTP Scam,OTP Scam,True,0.7355139023303527
+"Bhai OTP forward kar de, payment approve nahi ho raha.",OTP Scam,UPI Scam,False,0.2651843920692645
+Tell me the code from the SMS right now or the transfer will fail.,OTP Scam,OTP Scam,True,0.7113311660110452
+I am from support. Please dictate the OTP you received to verify your account.,OTP Scam,OTP Scam,True,0.5876822268638477
+Share the number in your latest message and I'll finish the refund for you.,OTP Scam,OTP Scam,True,0.39090255603869545
+Your verification code has arrived. Send it here so we can confirm the request.,OTP Scam,OTP Scam,True,0.6929828999798467
+Urgent: provide the OTP from your phone to prevent cancellation of the transaction.,OTP Scam,OTP Scam,True,0.689945542980495
+"Mujhe jo six digit code aaya hai woh bhej do, account verify karna hai.",OTP Scam,OTP Scam,True,0.5656481029828903
+Send the code you received; the system needs it before your payment can go through.,OTP Scam,OTP Scam,True,0.500693474212468
+Your bank has generated an OTP for this request. Reply with the code to continue.,OTP Scam,OTP Scam,True,0.3771951149777539
+Please tell me the one-time password that was just delivered to your phone.,OTP Scam,OTP Scam,True,0.7371670397304285
+Verification is pending. Give me the OTP and I'll activate the service.,OTP Scam,OTP Scam,True,0.4942651069454864
+"Don't delay, send the SMS code now or your order refund will be cancelled.",OTP Scam,OTP Scam,True,0.3752292625088559
+"Bhai jo OTP aaya hai screenshot bhej de, verification complete karni hai.",OTP Scam,OTP Scam,True,0.43691354148148764
+I need the code from your phone to confirm that you are the account holder.,OTP Scam,OTP Scam,True,0.6198424367874801
+Share the latest OTP with our agent for immediate transaction confirmation.,OTP Scam,OTP Scam,True,0.6836834498188493
+"Sir OTP bata dijiye, bina code ke refund release nahi hoga.",OTP Scam,OTP Scam,True,0.5937870766078753
+A code was sent to your mobile. Reply with those digits to finish the security check.,OTP Scam,OTP Scam,True,0.4230364009094044
+Send the OTP privately and your pending payment will be completed.,OTP Scam,OTP Scam,True,0.40800770232266176
+Your banking profile needs KYC renewal today. Use this message's verification page to avoid interruption.,KYC Scam,KYC Scam,True,0.44434132362819223
+KYC is supposedly overdue on your wallet; complete the verification immediately through the supplied page.,KYC Scam,KYC Scam,True,0.5828524988249699
+"Sir your account review is pending, upload your identity documents now or access may stop.",KYC Scam,KYC Scam,True,0.4727831000516848
+Aadhaar verification is required urgently. Finish the KYC process using the link we sent.,KYC Scam,KYC Scam,True,0.4919640160183817
+Your digital wallet may be restricted unless you complete the requested KYC update today.,KYC Scam,KYC Scam,True,0.5670313515718702
+Bank records show incomplete KYC. Confirm your details through the attached verification route.,KYC Scam,KYC Scam,True,0.5027601092218547
+KYC deadline is tonight. Update your identity information immediately to keep services active.,KYC Scam,KYC Scam,True,0.5216252357677837
+Your account compliance check failed. Re-submit your KYC information using the provided link.,KYC Scam,KYC Scam,True,0.5502668732545724
+"Bhai KYC update kar de abhi, warna banking service band ho jayegi.",KYC Scam,KYC Scam,True,0.807284407666629
+Your PAN verification needs attention. Complete the KYC request before the stated deadline.,KYC Scam,KYC Scam,True,0.5565698720017217
+We could not verify your customer profile. Use the supplied page to submit KYC again.,KYC Scam,KYC Scam,True,0.34804661354515853
+KYC renewal notice: your account may be restricted if you do not act within a few hours.,KYC Scam,KYC Scam,True,0.30140523172848915
+Please re-confirm your identity details for continued access to your wallet.,KYC Scam,Phishing,False,0.305475052249872
+Urgent KYC action required for your banking profile; open the verification page now.,KYC Scam,KYC Scam,True,0.4095286156483805
+Your customer verification has expired according to this notice. Update your KYC immediately.,KYC Scam,KYC Scam,True,0.8406686966764593
+Account compliance is incomplete. Submit your identity information through the link in this message.,KYC Scam,KYC Scam,True,0.4690623821322913
+A KYC check is pending against your mobile number. Complete it now to prevent service suspension.,KYC Scam,KYC Scam,True,0.5366954217010446
+"Madam KYC pending hai, details verify karo warna account hold ho sakta hai.",KYC Scam,KYC Scam,True,0.6442086088901228
+Your wallet verification is incomplete. Finish the requested KYC steps today.,KYC Scam,KYC Scam,True,0.6577908232461065
+Re-verification of your account is required immediately according to this message.,KYC Scam,Phishing,False,0.3215494123678843
+A UPI collect request has been sent to you. Approve it to receive the money.,UPI Scam,UPI Scam,True,0.9247784461583832
+Your merchant payment is waiting; accept the incoming UPI request to release the amount.,UPI Scam,UPI Scam,True,0.7470182797424214
+Scan this QR and enter your UPI PIN to receive your cashback.,UPI Scam,UPI Scam,True,0.8896621633306572
+Bhai payment receive karne ke liye collect request approve kar de.,UPI Scam,UPI Scam,True,0.8926276798533854
+Your UPI transfer failed. Approve the new request in your app to complete it.,UPI Scam,UPI Scam,True,0.8155449921236754
+A refund has been initiated through UPI. Accept the request to receive the amount.,UPI Scam,UPI Scam,True,0.43144290519320155
+Please authorize the UPI request that appears on your phone to unlock the pending payment.,UPI Scam,UPI Scam,True,0.5039451294821454
+You have an incoming UPI request. Confirm it now so the seller can send your money.,UPI Scam,UPI Scam,True,0.3217279813285339
+"QR scan karke PIN daal do, payment tumhare account mein aa jayega.",UPI Scam,UPI Scam,True,0.3882559568988857
+Your cashback cannot be credited until you approve the UPI collect request.,UPI Scam,UPI Scam,True,0.7362238167754318
+The payment gateway needs you to accept this UPI request before the transaction finishes.,UPI Scam,UPI Scam,True,0.6911478979030938
+A collect request for your pending order is waiting. Approve it immediately.,UPI Scam,UPI Scam,True,0.6808016144149871
+"To receive the prize amount, scan the QR code and confirm the UPI request.",UPI Scam,UPI Scam,True,0.4795233447574537
+Your UPI refund is on hold. Accept the request shown in your app.,UPI Scam,UPI Scam,True,0.7453867408044238
+"Sir UPI request pending hai, accept karoge tabhi amount credit hoga.",UPI Scam,UPI Scam,True,0.6634075880013623
+Confirm this UPI collect request to complete the verification payment.,UPI Scam,UPI Scam,True,0.7516380943519018
+Your account has an unpaid transaction. Approve the UPI request to settle it.,UPI Scam,UPI Scam,True,0.7613015586488763
+Scan the QR displayed here and enter your PIN to claim the transfer.,UPI Scam,UPI Scam,True,0.6113263219931147
+The sender cannot release your money until you approve the UPI collect request.,UPI Scam,UPI Scam,True,0.716559233734052
+Please authorize this UPI payment request now; otherwise the amount will expire.,UPI Scam,UPI Scam,True,0.4959134570846131
+We noticed a new login. Confirm your credentials on the verification page to keep the account active.,Phishing,Phishing,True,0.746474706971714
+Your webmail session needs confirmation. Sign in through the included page within the next few hours.,Phishing,Phishing,True,0.5833880519159491
+Security notice: verify your username and password using the attached account portal.,Phishing,Phishing,True,0.5805991271066346
+A login from an unfamiliar device was detected. Confirm your identity through the supplied sign-in page.,Phishing,Phishing,True,0.6501880421761699
+Your online banking session has expired. Re-enter your credentials at the linked page.,Phishing,Phishing,True,0.5271605269722611
+Account security check required. Sign in to review the unusual activity reported here.,Phishing,Phishing,True,0.611634797840696
+Your email storage is almost full; authenticate through the provided portal to prevent interruption.,Phishing,Safe,False,0.34504248795978226
+The security team requires you to confirm your account details using the button in this message.,Phishing,Phishing,True,0.6151358721665003
+"Bhai account login issue hai, is page pe sign in karke verify kar.",Phishing,Phishing,True,0.48088192857310263
+Your password needs confirmation because a new browser accessed the account.,Phishing,Phishing,True,0.3339117540335598
+We detected suspicious activity. Open the verification page and authenticate your profile.,Phishing,Phishing,True,0.5872226759329748
+Your account will remain under review until you confirm your login details through this portal.,Phishing,Phishing,True,0.6479819366087582
+Please sign in through the enclosed page to validate the recent security alert.,Phishing,Phishing,True,0.3892451736100513
+Your session could not be verified. Re-enter your account credentials using the supplied link.,Phishing,Phishing,True,0.6136253731041151
+Security verification is pending for your mailbox. Authenticate now to restore normal access.,Phishing,Phishing,True,0.39569405656579604
+An unusual device was detected on your profile. Confirm the account through the attached sign-in route.,Phishing,Phishing,True,0.5886191880871934
+Your account protection check requires a fresh login through the provided page.,Phishing,Phishing,True,0.5647738301566849
+Confirm your credentials now to review a reported login attempt on your account.,Phishing,Phishing,True,0.8468552523518162
+Your online profile needs authentication after a recent security event. Use the included page.,Phishing,Phishing,True,0.4952694075270936
+We need you to log in again through this verification page to prevent the account from being locked.,Phishing,Phishing,True,0.5155337347172567
+"Congratulations, your mobile number has been selected for a cash prize in our promotional draw.",Lottery Scam,Lottery Scam,True,0.9151876002354244
+You have won a festival reward. Contact the claims desk to receive your prize.,Lottery Scam,Lottery Scam,True,0.8406009969980532
+Your number was picked in a lucky draw and you are eligible for a large cash award.,Lottery Scam,Lottery Scam,True,0.7180272014363863
+"Badhai ho, aap prize winner hain. Call the claims number to collect your reward.",Lottery Scam,Lottery Scam,True,0.8193863899687902
+A promotional lottery has selected your account for a surprise cash benefit.,Lottery Scam,Lottery Scam,True,0.3122169579689628
+You are among today's lucky winners. Pay the required processing amount before the prize is released.,Lottery Scam,Lottery Scam,True,0.499907341596115
+Congratulations! Your ticket has won a reward in the national promotional draw.,Lottery Scam,Lottery Scam,True,0.6590744049034375
+Your phone number was randomly chosen for a valuable prize. Reply to start the claim.,Lottery Scam,Lottery Scam,True,0.4397691251303167
+Aapka naam lucky draw mein aaya hai aur aapne cash reward jeeta hai.,Lottery Scam,Lottery Scam,True,0.7217875130649424
+Your reward is waiting. A small registration payment is required to release the winning amount.,Lottery Scam,Lottery Scam,True,0.23204343639572508
+You have been selected as one of this month's prize recipients.,Lottery Scam,Lottery Scam,True,0.3850861638714454
+Great news: your mobile number won the grand promotional reward announced today.,Lottery Scam,Lottery Scam,True,0.43660523672281226
+Your lucky draw claim has been approved. Contact the prize department to proceed.,Lottery Scam,Lottery Scam,True,0.8577696040692323
+"Congratulations, you are eligible for a cash prize from our annual customer draw.",Lottery Scam,Lottery Scam,True,0.6683490200341019
+Your number has won a festival voucher. Complete the claim process to receive it.,Lottery Scam,Lottery Scam,True,0.7928106683663603
+"A prize of ₹75,000 has been reserved for your winning entry.",Lottery Scam,Lottery Scam,True,0.5758856891299103
+You are a selected winner in our customer appreciation lottery. Claim instructions will follow.,Lottery Scam,Lottery Scam,True,0.4431492643386574
+"Badhai, your lucky coupon has won a cash reward. Contact us immediately to claim it.",Lottery Scam,Lottery Scam,True,0.8835094785433677
+Your number was chosen from thousands of entries for a special promotional prize.,Lottery Scam,Lottery Scam,True,0.5445327159257887
+Congratulations winner! Pay the small claim fee and the prize will be dispatched.,Lottery Scam,Lottery Scam,True,0.6927971069149196
+Your parcel refund is pending. Confirm your bank information through the requested page to receive it.,Refund Scam,Refund Scam,True,0.5333264709130062
+We could not complete your refund because account details need confirmation.,Refund Scam,Refund Scam,True,0.5764944438443308
+Your cancelled order has a refund waiting; submit your banking information to release the money.,Refund Scam,Refund Scam,True,0.5588906608287106
+Refund processing is paused. Provide the requested account details immediately.,Refund Scam,Refund Scam,True,0.47833905729439136
+"Bhai courier refund ke liye bank details bhej do, amount release karna hai.",Refund Scam,Refund Scam,True,0.8217793687987582
+A payment reversal is ready but your account information must be reconfirmed first.,Refund Scam,Refund Scam,True,0.2091937428536396
+Your return refund could not be credited. Update the requested payment details to continue.,Refund Scam,Refund Scam,True,0.44867322062123693
+The refund team needs your card or bank details before the money can be released.,Refund Scam,Refund Scam,True,0.6556963514494896
+Your cash-back reversal is pending. Complete the verification requested in this message.,Refund Scam,KYC Scam,False,0.31299472847317616
+Refund failed because the beneficiary information is incomplete. Submit it again now.,Refund Scam,Safe,False,0.2436330992344458
+A delivery refund is waiting for confirmation of your payment details.,Refund Scam,Refund Scam,True,0.5005981418086816
+Your purchase refund is on hold; provide the requested financial information to process it.,Refund Scam,Refund Scam,True,0.33639089453800836
+The merchant says your refund cannot be sent until you confirm the destination account.,Refund Scam,Refund Scam,True,0.22142368444106666
+Refund notification: enter your account details to receive the outstanding amount.,Refund Scam,Refund Scam,True,0.5515451530840284
+"Sir refund stuck hai, account number confirm kar do taaki paisa release ho.",Refund Scam,Refund Scam,True,0.6004086625819705
+Your returned-item refund is ready. Verify the banking information supplied in this request.,Refund Scam,Refund Scam,True,0.37104573413868486
+The refund department needs additional account information to complete your payment.,Refund Scam,Refund Scam,True,0.3438665513891965
+Your order refund has been delayed because your beneficiary details require an update.,Refund Scam,Refund Scam,True,0.5453445058277768
+Confirm your bank details now so the pending refund can be transferred.,Refund Scam,Refund Scam,True,0.6646607483290703
+A refund amount is reserved for you but requires financial details before release.,Refund Scam,Refund Scam,True,0.48024039024822074
+"We are hiring remote assistants. No interview is required, but a registration deposit is needed.",Fake Job,Fake Job,True,0.5932113690718638
+"Earn ₹4,000 daily from home by completing simple tasks; pay a small onboarding fee first.",Fake Job,Fake Job,True,0.7925765495480205
+Your profile has been shortlisted for a work-from-home role. Send the security deposit to begin.,Fake Job,Fake Job,True,0.6409473781001847
+Part-time data entry work is available with guaranteed income after an upfront payment.,Fake Job,Fake Job,True,0.6039350550559726
+"Bhai ghar se job hai, pehle refundable registration fee deni hogi.",Fake Job,Fake Job,True,0.7280133817041855
+"Congratulations, you have been selected for an online job. Purchase the starter package to activate your position.",Fake Job,Fake Job,True,0.7283291845776024
+"A remote typing position can pay you daily, but an advance verification charge is required.",Fake Job,Fake Job,True,0.35454382064479084
+No experience needed. Deposit ₹999 today and receive your work assignment immediately.,Fake Job,Fake Job,True,0.4669262231730433
+You can earn money by rating products from home. Pay the activation amount to unlock tasks.,Fake Job,Fake Job,True,0.6243385207003357
+Your application is approved for a high-paying remote job. Submit the joining fee before training.,Fake Job,Fake Job,True,0.5141032679573266
+We offer instant employment with guaranteed earnings after you pay the security amount.,Fake Job,Fake Job,True,0.3953138933298729
+Work from home and earn every day. A refundable wallet top-up is required before you start.,Fake Job,Fake Job,True,0.47336005264343733
+You have been selected for a customer support role. Send the registration fee to confirm your seat.,Fake Job,Fake Job,True,0.5184742665055925
+"Online job available urgently. No CV needed, but candidates must purchase the required work kit.",Fake Job,Fake Job,True,0.4894216816956931
+"Earn up to ₹6,000 a day by completing simple online tasks after depositing the initial amount.",Fake Job,Fake Job,True,0.7654123221457608
+Remote job offer: pay the verification charge and your employee account will be activated.,Fake Job,Fake Job,True,0.317629995488291
+Your job application has passed screening. Transfer the onboarding amount to receive your login.,Fake Job,Fake Job,True,0.24596360699523515
+Part-time vacancy with guaranteed income; pay the recruiter before the first assignment.,Fake Job,Fake Job,True,0.3382394650051171
+"Bina experience ke work-from-home job, bas security deposit bharna hai aur aaj se kaam start.",Fake Job,Fake Job,True,0.7575210602418591
+You are selected for a home-based position. Complete the paid registration step to proceed.,Fake Job,Fake Job,True,0.5232096128283508

@@ -1,0 +1,36 @@
+============================================================
+              SAFELINK v0.3 EVALUATION
+============================================================
+
+Test samples: 771
+Accuracy: 99.48%
+
+CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+    Fake Job       1.00      0.99      0.99        80
+    KYC Scam       0.99      1.00      1.00       117
+Lottery Scam       1.00      1.00      1.00        48
+    OTP Scam       1.00      1.00      1.00        82
+    Phishing       0.99      1.00      1.00       131
+ Refund Scam       1.00      0.97      0.99        77
+        Safe       1.00      0.99      1.00       136
+    UPI Scam       0.98      1.00      0.99       100
+
+    accuracy                           0.99       771
+   macro avg       1.00      0.99      0.99       771
+weighted avg       0.99      0.99      0.99       771
+
+
+CONFUSION MATRIX
+------------------------------------------------------------
+Actual / Predicted        Fake Job      KYC Scam  Lottery Scam      OTP Scam      Phishing   Refund Scam          Safe      UPI Scam
+Fake Job                        79             0             0             0             1             0             0             0
+KYC Scam                         0           117             0             0             0             0             0             0
+Lottery Scam                     0             0            48             0             0             0             0             0
+OTP Scam                         0             0             0            82             0             0             0             0
+Phishing                         0             0             0             0           131             0             0             0
+Refund Scam                      0             1             0             0             0            75             0             1
+Safe                             0             0             0             0             0             0           135             1
+UPI Scam                         0             0             0             0             0             0             0           100

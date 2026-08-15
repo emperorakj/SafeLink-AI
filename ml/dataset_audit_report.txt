@@ -1,0 +1,120 @@
+=================================================================
+              SAFELINK DATASET AUDIT
+=================================================================
+
+DATASET
+-----------------------------------------------------------------
+Total rows:              3758
+Columns:                 text, label
+
+DATA QUALITY
+-----------------------------------------------------------------
+Empty text rows:         0
+Empty label rows:        0
+Invalid labels:          0
+Exact duplicate rows:    0
+Normalized duplicate rows: 0
+Near-duplicate pairs:    1689
+
+CLASS DISTRIBUTION
+-----------------------------------------------------------------
+Phishing               639 ( 17.00%)
+Safe                   595 ( 15.83%)
+UPI Scam               481 ( 12.80%)
+KYC Scam               474 ( 12.61%)
+OTP Scam               440 ( 11.71%)
+Fake Job               409 ( 10.88%)
+Refund Scam            389 ( 10.35%)
+Lottery Scam           331 (  8.81%)
+
+MOST REPEATED NORMALIZED MESSAGES
+-----------------------------------------------------------------
+
+TOP NEAR-DUPLICATE PAIRS
+-----------------------------------------------------------------
+
+Similarity: 0.998
+A: Your merchant transaction of [AMOUNT] is showing as pending on our end. Kindly approve the collect request sent to your registered UPI ID to complete 
+B: Ur merchant transaction of [AMOUNT] is showing as pending on our end. Kindly approve the collect request sent to your registered UPI ID to complete th
+
+Similarity: 0.998
+A: Your merchant transaction of ₹2,500 is showing as pending on our end. Kindly approve the collect request sent to your registered UPI ID to complete th
+B: Ur merchant transaction of ₹2,500 is showing as pending on our end. Kindly approve the collect request sent to your registered UPI ID to complete the 
+
+Similarity: 0.996
+A: Ur Paytm account will be suspended due to pending KYC. Verify now at [LINK].
+B: Your Paytm account will be suspended due to pending KYC. Verify now at [LINK].
+
+Similarity: 0.996
+A: Ur PhonePe transaction of ₹799 failed. Enter your PIN again to complete it.
+B: your phonepe transaction of ₹799 failed. enter your pin again to complete it.
+
+Similarity: 0.996
+A: Your net banking will be deactivated by tomorrow morning unless you re-verify at [LINK].
+B: Ur net banking will be deactivated by tomorrow morning unless you re-verify at [LINK].
+
+Similarity: 0.996
+A: Your net banking will be deactivated within 30 minutes unless you re-verify at [LINK].
+B: ur net banking will be deactivated within 30 minutes unless you re-verify at [LINK].
+
+Similarity: 0.996
+A: ur electricity bill refund of ₹2,500 is pending, share your account number to process it.
+B: Your electricity bill refund of ₹2,500 is pending, share your account number to process it.
+
+Similarity: 0.996
+A: Ur merchant payment of ₹25,000 is on hold, approve the collect request to release it.
+B: YOUR MERCHANT PAYMENT OF ₹25,000 IS ON HOLD, APPROVE THE COLLECT REQUEST TO RELEASE IT.
+
+Similarity: 0.995
+A: Ur KYC verification has expired. Please update it right now to avoid account suspension.
+B: YOUR KYC VERIFICATION HAS EXPIRED. PLEASE UPDATE IT RIGHT NOW TO AVOID ACCOUNT SUSPENSION.
+
+Similarity: 0.995
+A: UR NET BANKING WILL BE DEACTIVATED IMMEDIATELY UNLESS YOU RE-VERIFY AT [LINK].
+B: Your net banking will be deactivated immediately unless you re-verify at [LINK].
+
+Similarity: 0.994
+A: ur google pay account will be suspended due to pending kyc. verify now at [link].
+B: Your Google Pay account will be suspended due to pending KYC. Verify now at [LINK].
+
+Similarity: 0.993
+A: your profile needs re-verification. [link]
+B: Ur profile needs re-verification. [LINK]
+
+Similarity: 0.993
+A: Your refund is ready, confirm details at [LINK].
+B: Ur refund is ready, confirm details at [LINK].
+
+Similarity: 0.993
+A: we are currently hiring for a remote data entry role that requires no prior experience. Successful candidates can earn up to [AMOUNT] per day by compl
+B: HI, WE ARE CURRENTLY HIRING FOR A REMOTE DATA ENTRY ROLE THAT REQUIRES NO PRIOR EXPERIENCE. SUCCESSFUL CANDIDATES CAN EARN UP TO [AMOUNT] PER DAY BY C
+
+Similarity: 0.992
+A: Your payment could not be verified. Approve the request on your UPI app to confirm the transaction.
+B: Ur payment could not be verified. Approve the request on your UPI app to confirm the transaction
+
+Similarity: 0.991
+A: Dear customer, we detected unusual activity on your acount. To prevent temporary suspension, please complete verification through the provided link im
+B: Dear customer, we detected unusual activity on your account. To prevent temporary suspension, please complete verification through the provided link i
+
+Similarity: 0.991
+A: Your name has been picked in the Diwali dhamaka lucky draw for ₹500, contact [PHONE] immediately
+B: Ur name has been picked in the Diwali dhamaka lucky draw for ₹500, contact [PHONE] immediately.
+
+Similarity: 0.991
+A: We are reaching out from the Bank of Baroda security desk regarding suspicious activity detected on your account earlier today. As part of standard ve
+B: Btw, We are reaching out from the Bank of Baroda security desk regarding suspicious activity detected on your account earlier today. As part of standa
+
+Similarity: 0.991
+A: Dear winner, we are delighted to inform you that your mobile number has been randomly selected in our nationwide lucky draw promotion. You have won a 
+B: Hi, Dear winner, we are delighted to inform you that your mobile number has been randomly selected in our nationwide lucky draw promotion. You have wo
+
+Similarity: 0.991
+A: Your ICICI account will be blocked in the next 1 hour unless you verify via [LINK]
+B: Ur ICICI account will be blocked in the next 1 hour unless you verify via [LINK].
+
+=================================================================
+STATUS: ⚠ DATASET REQUIRES CLEANING
+
+Issues detected: near duplicates
+=================================================================

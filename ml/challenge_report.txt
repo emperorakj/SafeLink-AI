@@ -1,0 +1,64 @@
+SAFELINK v0.3 ROBUSTNESS TEST
+======================================================================
+
+Challenge samples: 160
+Accuracy: 95.00%
+
+              precision    recall  f1-score   support
+
+    Fake Job       1.00      1.00      1.00        20
+    KYC Scam       0.95      0.90      0.92        20
+Lottery Scam       1.00      1.00      1.00        20
+    OTP Scam       1.00      0.95      0.97        20
+    Phishing       0.90      0.95      0.93        20
+ Refund Scam       0.95      0.90      0.92        20
+        Safe       0.90      0.90      0.90        20
+    UPI Scam       0.91      1.00      0.95        20
+
+    accuracy                           0.95       160
+   macro avg       0.95      0.95      0.95       160
+weighted avg       0.95      0.95      0.95       160
+
+
+MISCLASSIFICATIONS
+----------------------------------------------------------------------
+
+Text: Never approve a UPI collect request unless you created it yourself.
+Expected: Safe
+Predicted: UPI Scam
+Confidence: 62.66%
+
+Text: Your refund has been processed and should appear in your account according to the merchant's normal refund timeline.
+Expected: Safe
+Predicted: Refund Scam
+Confidence: 44.76%
+
+Text: Bhai OTP forward kar de, payment approve nahi ho raha.
+Expected: OTP Scam
+Predicted: UPI Scam
+Confidence: 26.52%
+
+Text: Please re-confirm your identity details for continued access to your wallet.
+Expected: KYC Scam
+Predicted: Phishing
+Confidence: 30.55%
+
+Text: Re-verification of your account is required immediately according to this message.
+Expected: KYC Scam
+Predicted: Phishing
+Confidence: 32.15%
+
+Text: Your email storage is almost full; authenticate through the provided portal to prevent interruption.
+Expected: Phishing
+Predicted: Safe
+Confidence: 34.50%
+
+Text: Your cash-back reversal is pending. Complete the verification requested in this message.
+Expected: Refund Scam
+Predicted: KYC Scam
+Confidence: 31.30%
+
+Text: Refund failed because the beneficiary information is incomplete. Submit it again now.
+Expected: Refund Scam
+Predicted: Safe
+Confidence: 24.36%
