@@ -1,0 +1,214 @@
+.tips-header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
+
+.tips-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.tips-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.tips-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 20px 60px;
+}
+
+/* Introduction */
+
+.tips-intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 35px;
+}
+
+.tips-intro h2 {
+  color: #ffdd57;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tips-intro > p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.golden-rule {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  margin-top: 25px;
+  padding: 18px 22px;
+  border-radius: 15px;
+  background: rgba(255, 221, 87, 0.12);
+  border: 1px solid rgba(255, 221, 87, 0.45);
+}
+
+.golden-rule > span {
+  font-size: 2rem;
+}
+
+.golden-rule strong {
+  color: #ffdd57;
+}
+
+.golden-rule p {
+  margin: 4px 0 0;
+}
+
+/* Tips Grid */
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.tip-card {
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tip-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.tip-card h3 {
+  color: #ffdd57;
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.tip-card p {
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+.tip-card h4 {
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.tip-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.tip-card li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.tip-action {
+  margin-top: 20px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: rgba(0, 255, 224, 0.1);
+  border-left: 4px solid #00ffe0;
+  line-height: 1.5;
+}
+
+.tip-action strong {
+  color: #00ffe0;
+}
+
+/* Checklist */
+
+.checklist {
+  margin-top: 35px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.checklist h2 {
+  text-align: center;
+  color: #ffdd57;
+  margin-top: 0;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.checklist-grid div {
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* CTA */
+
+.tips-cta {
+  text-align: center;
+  margin-top: 35px;
+  padding: 40px 20px;
+}
+
+.tips-cta h2 {
+  color: #ffdd57;
+  margin-bottom: 8px;
+}
+
+.tips-cta p {
+  margin-bottom: 22px;
+}
+
+.tips-cta a {
+  display: inline-block;
+  padding: 13px 24px;
+  border-radius: 25px;
+  background: #ffdd57;
+  color: #003366;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.tips-cta a:hover {
+  background: #00eeff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .tips-grid,
+  .checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .tips-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

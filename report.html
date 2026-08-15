@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SafeLink - Report a Scam</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="report.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="tips.html">Tips</a>
+    <a href="report.html">Report Scam</a>
+  </nav>
+
+
+  <!-- Header -->
+  <header class="report-header">
+    <h1>🚨 Report a Scam</h1>
+
+    <p>
+      Help make digital spaces safer by reporting suspicious
+      messages, links, calls and online fraud.
+    </p>
+  </header>
+
+
+  <main class="report-container">
+
+    <!-- Intro -->
+    <section class="report-intro">
+
+      <div class="intro-icon">🛡️</div>
+
+      <div>
+        <h2>Help Protect Others</h2>
+
+        <p>
+          If you've encountered a suspicious message or scam,
+          report it to help build a stronger digital safety network.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- Report Form -->
+    <section class="report-card">
+
+      <form id="reportForm">
+
+        <!-- Source -->
+        <div class="form-group">
+
+          <label for="source">
+            Where did you encounter this?
+          </label>
+
+          <select id="source" required>
+
+            <option value="">
+              Select a platform
+            </option>
+
+            <option value="SMS">
+              📱 SMS
+            </option>
+
+            <option value="WhatsApp">
+              💬 WhatsApp
+            </option>
+
+            <option value="Email">
+              📧 Email
+            </option>
+
+            <option value="Phone Call">
+              📞 Phone Call
+            </option>
+
+            <option value="Website">
+              🌐 Website
+            </option>
+
+            <option value="Social Media">
+              📱 Social Media
+            </option>
+
+            <option value="Telegram">
+              ✈️ Telegram
+            </option>
+
+            <option value="Other">
+              📌 Other
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Category -->
+        <div class="form-group">
+
+          <label for="category">
+            What type of scam is this?
+          </label>
+
+          <select id="category" required>
+
+            <option value="">
+              Select scam category
+            </option>
+
+            <option value="Phishing">
+              🔗 Phishing
+            </option>
+
+            <option value="OTP Scam">
+              🔐 OTP Scam
+            </option>
+
+            <option value="KYC Scam">
+              🏦 KYC Scam
+            </option>
+
+            <option value="Refund Scam">
+              💰 Refund Scam
+            </option>
+
+            <option value="Fake Job">
+              💼 Fake Job
+            </option>
+
+            <option value="Lottery Scam">
+              🎁 Lottery Scam
+            </option>
+
+            <option value="UPI Scam">
+              💳 UPI Scam
+            </option>
+
+            <option value="Other Scam">
+              ⚠️ Other Scam
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Suspicious Message -->
+        <div class="form-group">
+
+          <label for="message">
+            Suspicious message or content
+          </label>
+
+          <textarea
+            id="message"
+            rows="6"
+            maxlength="3000"
+            placeholder="Paste the suspicious message, link or describe what happened..."
+            required
+          ></textarea>
+
+          <div class="character-count">
+            <span id="characterCount">0</span>/3000
+          </div>
+
+        </div>
+
+
+        <!-- Additional Details -->
+        <div class="form-group">
+
+          <label for="details">
+            Additional details
+            <span class="optional">(Optional)</span>
+          </label>
+
+          <textarea
+            id="details"
+            rows="4"
+            maxlength="1500"
+            placeholder="Tell us anything else that might help..."
+          ></textarea>
+
+          <div class="character-count">
+            <span id="detailsCount">0</span>/1500
+          </div>
+
+        </div>
+
+
+        <!-- AI Information -->
+        <div
+          id="aiDetection"
+          class="ai-detection"
+          style="display: none;"
+        >
+
+          <div class="ai-icon">
+            🤖
+          </div>
+
+          <div>
+
+            <strong>
+              SafeLink AI Detection
+            </strong>
+
+            <p id="aiDetectionText"></p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Privacy Notice -->
+        <div class="privacy-notice">
+
+          <span>🔒</span>
+
+          <p>
+            For your safety, never include passwords, OTPs,
+            UPI PINs, CVVs or other sensitive credentials
+            in your report.
+          </p>
+
+        </div>
+
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="submit-report"
+          id="submitReport"
+        >
+          🚨 Submit Report
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- Success Message -->
+    <section
+      id="successMessage"
+      class="success-message"
+      style="display: none;"
+    >
+
+      <div class="success-icon">
+        ✅
+      </div>
+
+      <h2>Report Submitted</h2>
+
+      <p>
+        Thank you for helping make digital spaces safer.
+        Your report has been recorded successfully.
+      </p>
+
+      <div class="success-actions">
+
+        <a href="index.html">
+          🔍 Analyze Another Message
+        </a>
+
+        <a href="dashboard.html">
+          📊 View Dashboard
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Safety Reminder -->
+    <section class="report-reminder">
+
+      <h2>🛡️ Remember</h2>
+
+      <div class="reminder-grid">
+
+        <div>
+          🔐 Never share OTPs, PINs or CVVs.
+        </div>
+
+        <div>
+          🔗 Avoid suspicious links.
+        </div>
+
+        <div>
+          💳 Verify unexpected payment requests.
+        </div>
+
+        <div>
+          ⚡ Don't act under pressure.
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      © 2026 SafeLink by AKJ Technologies |
+      Protecting India from Digital Scams
+    </p>
+  </footer>
+
+
+  <script src="report.js"></script>
+
+</body>
+</html>

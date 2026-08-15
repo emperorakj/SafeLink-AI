@@ -1,0 +1,425 @@
+/* =========================
+   REPORT HEADER
+   ========================= */
+
+.report-header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
+
+.report-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.8rem;
+}
+
+.report-header p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.report-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.report-intro {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 22px;
+  margin-bottom: 25px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  border-left: 4px solid #ffdd57;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.intro-icon {
+  font-size: 2.5rem;
+}
+
+.report-intro h2 {
+  margin: 0 0 6px;
+  color: #ffdd57;
+}
+
+.report-intro p {
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+
+/* =========================
+   REPORT CARD
+   ========================= */
+
+.report-card {
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.form-group {
+  margin-bottom: 23px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.optional {
+  opacity: 0.55;
+  font-weight: normal;
+}
+
+
+/* Inputs */
+
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 12px;
+
+  padding: 13px 14px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.95);
+  color: #172033;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #00ffe0;
+
+  box-shadow:
+    0 0 0 3px rgba(0, 255, 224, 0.15);
+}
+
+
+/* Character Count */
+
+.character-count {
+  text-align: right;
+
+  margin-top: 5px;
+
+  font-size: 0.75rem;
+
+  opacity: 0.6;
+}
+
+
+/* =========================
+   AI DETECTION
+   ========================= */
+
+.ai-detection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin: 20px 0;
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  background: rgba(231, 76, 60, 0.12);
+
+  border-left: 4px solid #ff7675;
+}
+
+.ai-icon {
+  font-size: 1.8rem;
+}
+
+.ai-detection strong {
+  color: #ff7675;
+}
+
+.ai-detection p {
+  margin: 4px 0 0;
+
+  font-size: 0.9rem;
+
+  opacity: 0.85;
+}
+
+
+/* =========================
+   PRIVACY
+   ========================= */
+
+.privacy-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin: 20px 0;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.privacy-notice span {
+  font-size: 1.2rem;
+}
+
+.privacy-notice p {
+  margin: 0;
+
+  font-size: 0.82rem;
+
+  line-height: 1.45;
+
+  opacity: 0.75;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+   ========================= */
+
+.submit-report {
+  width: 100%;
+
+  padding: 14px 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #ffdd57;
+
+  color: #003366;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.submit-report:hover {
+  background: #00eeff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-report:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+   ========================= */
+
+.success-message {
+  margin: 25px 0;
+
+  padding: 35px;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  background: rgba(46, 204, 113, 0.12);
+
+  border: 1px solid rgba(46, 204, 113, 0.4);
+
+  backdrop-filter: blur(12px);
+}
+
+.success-icon {
+  font-size: 3rem;
+}
+
+.success-message h2 {
+  color: #55efc4;
+
+  margin: 10px 0;
+}
+
+.success-message p {
+  opacity: 0.85;
+}
+
+
+/* Success buttons */
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  margin-top: 22px;
+}
+
+.success-actions a {
+  padding: 11px 18px;
+
+  border-radius: 10px;
+
+  background: #ffdd57;
+
+  color: #003366;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.success-actions a:hover {
+  background: #00eeff;
+}
+
+
+/* =========================
+   REMINDER
+   ========================= */
+
+.report-reminder {
+  margin-top: 30px;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.report-reminder h2 {
+  text-align: center;
+
+  margin-top: 0;
+
+  color: #ffdd57;
+}
+
+.reminder-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.reminder-grid div {
+  padding: 12px;
+
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 650px) {
+
+  .report-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .report-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .report-card {
+    padding: 20px;
+  }
+
+  .report-intro {
+    align-items: flex-start;
+  }
+
+  .reminder-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
