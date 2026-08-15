@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafeLink Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#">Tips</a>
+    <a href="#">Report Scam</a>
+  </nav>
+
+  <header>
+    <h1>SafeLink Dashboard</h1>
+    <p>Live insights on scams, alerts, and community reports</p>
+  </header>
+
+  <main class="dashboard">
+    <!-- Top stats -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Total reports (7d)</h3>
+        <p id="stat-total">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>High-risk (%)</h3>
+        <p id="stat-high">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>Top category</h3>
+        <p id="stat-top">—</p>
+      </div>
+      <div class="stat-card">
+        <h3>New alerts</h3>
+        <p id="stat-alerts">—</p>
+      </div>
+    </section>
+
+    <!-- Charts row -->
+    <section class="charts">
+      <div class="chart-card">
+        <h3>Weekly scam volume</h3>
+        <canvas id="chartVolume"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Category distribution</h3>
+        <canvas id="chartCategories"></canvas>
+      </div>
+    </section>
+
+    <!-- Alerts + recent reports -->
+    <section class="grid">
+      <div class="panel">
+        <h3>Latest alerts</h3>
+        <ul id="alerts-list" class="list"></ul>
+      </div>
+      <div class="panel">
+        <h3>Recent reports</h3>
+        <ul id="reports-list" class="list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 SafeLink by AKJ Technologies | Protecting India from Digital Scams</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

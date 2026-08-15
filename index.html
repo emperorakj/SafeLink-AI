@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeLink - Scam & Digital Safety Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>SafeLink</h1>
+    <p>AI-Powered Scam & Digital Safety Platform</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#">Tips</a>
+    <a href="#">Report Scam</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Stay Safe Online with AI</h2>
+    <p>Check suspicious messages, links, or emails instantly with SafeLink.</p>
+    <button>Get Started</button>
+  </section>
+
+  <section class="detector">
+    <h1>🔍 Scam Detector</h1>
+    <div id="result" class="result-box"></div>
+    <p style="font-size: 20px;">Paste suspicious text or links below and let SafeLink analyze them:</p>
+    <!-- ✅ Add the missing id -->
+    <textarea id="scamInput" placeholder="Enter message or link here..."></textarea>
+    <button id="analyzeBtn">Analyze</button>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>📊 Scam Trends</h3>
+      <p>View the latest fraud alerts happening across India.</p>
+    </div>
+    <div class="feature">
+      <h3>🛡️ Safety Tips</h3>
+      <p>Learn how to protect your data, UPI, and devices.</p>
+    </div>
+    <div class="feature">
+      <h3>🌐 Community Reporting</h3>
+      <p>Report scams to strengthen India’s digital safety net.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 SafeLink by AKJ Technologies | Protecting India from Digital Scams</p>
+  </footer>
+
+  <script>
+    const analyzeBtn = document.getElementById("analyzeBtn");
+const textarea = document.getElementById("scamInput");
+const resultBox = document.getElementById("result");
+
+analyzeBtn.addEventListener("click", async () => {
+  const text = textarea.value.trim();
+  if (!text) {
+    resultBox.className = "result-box";
+    resultBox.innerHTML = "<span style='color:red;'>Please paste a message or link.</span>";
+    return;
+  }
+
+  try {
+    const res = await fetch("http://127.0.0.1:5000/api/detect", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text })
+    });
+
+    const data = await res.json();
+    const category = data.category.toLowerCase().replace(" ", "-"); 
+    resultBox.className = `result-box ${category}`;
+    
+    // Emoji badges
+    const emojiMap = {
+      "safe": "🟢",
+      "phishing scam": "🔴",
+      "otp scam": "🔴",
+      "fake job": "🔴",
+      "refund scam": "🔴",
+      "lottery scam": "🔴",
+      "refund-scam": "🔴",
+      "kyc-scam": "🔴",
+    };
+
+    resultBox.innerHTML = `
+      ${emojiMap[category] || "⚠️"} 
+      <strong>${data.category}</strong><br>
+      Confidence: ${data.score}%
+    `;
+  } catch (err) {
+    resultBox.className = "result-box";
+    resultBox.innerHTML = `<span style="color:red;">Error: ${err.message}</span>`;
+    console.error("Fetch error:", err);
+  }
+});
+  </script>
+
+</body>
+</html>
